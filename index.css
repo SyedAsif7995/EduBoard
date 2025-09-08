@@ -80,7 +80,7 @@ header.topbar{
 
 main{padding:24px; display:grid; gap:24px; grid-template-columns:1fr; grid-auto-rows:min-content}
 
-/* Overview Cards */
+
 .cards{display:grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap:16px}
 .card{background:var(--surface); border-radius:var(--radius); box-shadow:var(--shadow); padding:16px}
 .card h3{font-size:.95rem; color:var(--muted); margin:0 0 8px}
@@ -89,11 +89,8 @@ main{padding:24px; display:grid; gap:24px; grid-template-columns:1fr; grid-auto-
 .trend{font-size:.85rem}
 .up{color:var(--accent)}
 .down{color:var(--danger)}
-
-/* Grid: main content */
 .content-grid{display:grid; grid-template-columns: 2fr 1fr; gap:24px}
 
-/* Progress Table */
 section[aria-labelledby="progress-heading"] table{width:100%; border-collapse:separate; border-spacing:0 10px}
 th, td{padding:12px 14px; text-align:left}
 th{color:var(--muted); font-weight:600}
@@ -112,7 +109,6 @@ tbody tr td:last-child{border-radius:0 12px 12px 0}
 .status.warn{color:var(--warning)}
 .status.bad{color:var(--danger)}
 
-/* Deadlines */
 .deadlines{display:flex; flex-direction:column; gap:12px}
 .deadline{background:var(--surface); border-radius:var(--radius); box-shadow:var(--shadow); padding:14px; display:flex; gap:12px; align-items:center}
 .date-badge{
@@ -121,7 +117,7 @@ tbody tr td:last-child{border-radius:0 12px 12px 0}
 }
 .date-badge small{display:block; font-weight:600}
 
-/* Profile Card */
+
 .profile-card{background:var(--surface); border-radius:var(--radius); box-shadow:var(--shadow); padding:16px}
 .profile-grid{display:grid; grid-template-columns: 80px 1fr; gap:16px; align-items:center}
 .profile-grid img{width:80px; height:80px; border-radius:50%; object-fit:cover}
@@ -130,7 +126,7 @@ tbody tr td:last-child{border-radius:0 12px 12px 0}
 .details label{display:block; font-size:.75rem; color:var(--muted)}
 .details span{font-weight:600}
 
-/* Responsive */
+
 @media (max-width: 1100px){
   .cards{grid-template-columns: repeat(2,minmax(0,1fr))}
   .content-grid{grid-template-columns:1fr}
@@ -148,13 +144,11 @@ tbody tr td:last-child{border-radius:0 12px 12px 0}
   .cards{grid-template-columns: 1fr}
 }
 
-/* Accessibility focus */
 a, button, input{outline:none}
 a:focus-visible, button:focus-visible, input:focus-visible{
   box-shadow:0 0 0 3px rgba(37,99,235,.35); border-radius:10px
 }
 
-/* Visually hidden utility */
 .sr-only{
   position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden;
   clip:rect(0,0,0,0); white-space:nowrap; border:0;
